@@ -7,6 +7,7 @@ A minimal fullstack app that lets you upload a video and perform visual semantic
 - `cd` into `backend` directory
 - Run `poetry install` to install dependencies. You need to install `poetry` first, a package manager.
   - If you're on windows and have a GPU, you need to install PyTorch on your own separately
+- Activate virtual environment with `poetry shell`
 - To start backend, execute `uvicorn app.main:app`
 
 File Upload Pipeline: takes in an uploaded file, extracts 1 frame every second using OpenCV, create image embeddings using CLIP, store embeddings in Pinecone vector database
