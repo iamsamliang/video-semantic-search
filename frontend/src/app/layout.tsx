@@ -23,8 +23,7 @@ export default function RootLayout({
         <main className="flex flex-col min-h-dvh">
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
-            enableSystem
+            defaultTheme="light"
             disableTransitionOnChange
           >
             <NavBar />
